@@ -11,7 +11,7 @@ AI / DATA / AUTOMATION 중심의 포트폴리오 메인 페이지 1차 시안입
 ## 연결 프로젝트
 - Resume: https://elwlrma486-design.github.io/hyunmu-ku/
 - GitHub: https://github.com/elwlrma486-design/hyunmu-ku
-- AI Report: https://elwlrma486-design.github.io/sk/
+- AI Report: https://elwlrma486-design.github.io/hyunmu-ku_sk/
 - LinkedIn: https://www.linkedin.com/feed/
 
 ## GitHub Pages
