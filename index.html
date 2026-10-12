@@ -22,6 +22,30 @@ main{overflow:hidden}.hero{padding:clamp(70px,10vw,130px) max(5vw,24px) 45px;bac
 @media(max-width:800px){.topbar{height:auto;min-height:68px;flex-wrap:wrap;padding:14px 22px;gap:12px}.topbar nav{order:3;width:100%;overflow:auto;padding:4px 0}.topbar nav a{white-space:nowrap}.status{margin-left:auto}.hero-grid,.about-grid,.report-intro,.qualification-grid,.activity-grid{grid-template-columns:1fr}.hero-grid{gap:40px}.report-intro{gap:18px}.report-main{grid-template-columns:1fr}.future-grid{grid-template-columns:1fr}.report-links-group{grid-template-columns:1fr}.section-head{margin-bottom:32px}.scroll-note{margin-top:35px}}
 @media(max-width:480px){.hero{padding-top:60px}.hero h1{font-size:clamp(3.1rem,17vw,5rem)}.section{padding-top:58px;padding-bottom:58px}.section-head{font-size:.58rem}.metrics{gap:17px}.metrics strong{font-size:1rem}.metrics span{font-size:.5rem}.cert{grid-template-columns:30px 1fr}.cert small{grid-column:2}.timeline-item,.activity-item{grid-template-columns:1fr;gap:8px}.cta>div{gap:14px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+/* Chapter 03: highlighted additional qualification */
+.cert-feature{margin-top:22px;padding:20px 21px;border:1px solid #cbdcff;border-radius:15px;background:linear-gradient(135deg,#f2f7ff 0%,#fff 75%);box-shadow:0 10px 28px rgba(57,120,246,.08);position:relative;overflow:hidden}
+.cert-feature:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--blue)}
+.cert-feature-top{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-bottom:13px;border-bottom:1px solid #dce7f8;color:var(--blue);font-size:.63rem;font-weight:900;letter-spacing:.12em}
+.cert-feature-number{font-size:.72rem;color:#8aa8e8}
+.cert-feature-body{display:flex;align-items:flex-start;gap:14px;padding-top:17px}
+.cert-feature-icon{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;background:var(--blue);color:#fff;border-radius:12px;font-size:1.2rem;box-shadow:0 7px 15px rgba(57,120,246,.22)}
+.cert-feature-copy{min-width:0}.cert-feature-label{margin:0 0 5px;color:#6b83a5;font-size:.61rem;font-weight:850;letter-spacing:.08em}
+.cert-feature-copy h3{margin:0;color:var(--navy);font-size:1.13rem;line-height:1.4;letter-spacing:-.035em}
+.cert-feature-copy>p:not(.cert-feature-label){margin:5px 0 13px;color:#64748b;font-size:.78rem}
+.cert-feature-copy a{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-size:.74rem;font-weight:850}
+.cert-feature-copy a span{font-size:.95rem;transition:transform .2s}.cert-feature-copy a:hover span{transform:translate(2px,-2px)}
+/* Chapter 04: make AI-QUIZ the primary project subchapter */
+.activity-item.featured-project{grid-template-columns:110px minmax(0,1fr);padding:26px 22px;margin:0 0 18px;border:1px solid rgba(201,243,106,.42);border-radius:16px;background:linear-gradient(115deg,rgba(201,243,106,.10),rgba(255,255,255,.045) 62%);box-shadow:0 14px 35px rgba(0,0,0,.12);position:relative;overflow:hidden}
+.featured-project:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--lime)}
+.featured-project .activity-label{color:var(--lime);font-size:.64rem;line-height:1.5}
+.featured-project .project-category{display:inline-flex;padding:5px 9px;border:1px solid rgba(201,243,106,.28);border-radius:999px;background:rgba(201,243,106,.08);color:var(--lime);font-size:.61rem}
+.featured-project .project-title{font-size:clamp(1.8rem,3vw,2.25rem);margin:10px 0 8px;letter-spacing:-.055em}
+.featured-project .project-description{max-width:560px;font-size:.9rem;line-height:1.85;color:#d0dbea}
+.featured-project .project-link{margin-top:18px;padding:10px 14px;background:var(--lime);color:#13243a;border:1px solid var(--lime);font-size:.73rem;box-shadow:0 7px 18px rgba(201,243,106,.12)}
+.featured-project .project-link:hover{background:#d8ff86;transform:translateY(-2px)}
+@media(max-width:800px){.activity-item.featured-project{grid-template-columns:1fr;gap:10px;padding:22px 18px}.cert-feature{padding:17px}}
+
 </style>
 </head>
 <body>
@@ -164,9 +188,18 @@ main{overflow:hidden}.hero{padding:clamp(70px,10vw,130px) max(5vw,24px) 45px;bac
           <div class="cert"><b>04</b><span>ITQ 한글 / 파워포인트 A</span><small>Certification</small></div>
           <div class="cert"><b>05</b><span>운전면허 1종보통</span><small>License</small></div>
           <div class="cert"><b>06</b><span>한림성심대학교 방사선과</span><small>2026 — 재학</small></div>
-<a class="report-link" href="https://lnkd.in/p/dHBA3_3d" target="_blank" rel="noopener">
-      * Coursera - Global MOOC on the Ethics of AIS 교육 수료 <span>↗</span>
-    </a>
+<div class="cert-feature">
+  <div class="cert-feature-top"><span>ADDITIONAL LEARNING</span><span class="cert-feature-number">07</span></div>
+  <div class="cert-feature-body">
+    <div class="cert-feature-icon" aria-hidden="true">✦</div>
+    <div class="cert-feature-copy">
+      <p class="cert-feature-label">COURSERA · GLOBAL MOOC</p>
+      <h3>AI 윤리 교육 수료</h3>
+      <p>Global MOOC on the Ethics of AIS</p>
+      <a href="https://lnkd.in/p/dHBA3_3d" target="_blank" rel="noopener noreferrer">수료 과정 보기 <span>↗</span></a>
+    </div>
+  </div>
+</div>
         </div>
       </div>
     </section>
@@ -183,8 +216,8 @@ main{overflow:hidden}.hero{padding:clamp(70px,10vw,130px) max(5vw,24px) 45px;bac
         </div>
         <div class="timeline">
           <!-- AI-QUIZ PROJECT -->
-<div class="activity-item">
-  <div class="activity-label">PROJECT</div>
+<div class="activity-item featured-project">
+  <div class="activity-label">FEATURED PROJECT</div>
 
   <div class="activity-content">
     <span class="project-category">AI → WEB</span>
